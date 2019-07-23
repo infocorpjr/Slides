@@ -12,6 +12,7 @@
 $files = scandir("assets/img/slides");
 $files = array_slice($files, 2);
 ?>
+
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <?php foreach ($files as $file): ?>
@@ -25,9 +26,11 @@ $files = array_slice($files, 2);
 <script src="assets/js/swiper.min.js"></script>
 <script>
     var Swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        speed: 1000,
         autoplay: {
             delay: 5000,
-        },
+        }
     });
 </script>
 </body>

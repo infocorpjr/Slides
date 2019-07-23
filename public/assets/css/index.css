@@ -1,18 +1,24 @@
 html, body {
     position: relative;
     height: 100%;
+    background-color: blue;
 }
 body {
-    background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color:#000;
     margin: 0;
     padding: 0;
 }
+
 .swiper-container {
     width: 100%;
     height: 100%;
+    background-image: url("/assets/img/logo.svg");
+    background-repeat: no-repeat;
+    background-position-x: 10vh;
+    background-position-y: 50%;
+    background-size: 30%;
 }
 
 img{
@@ -20,20 +26,19 @@ img{
 }
 
 .swiper-slide {
-    text-align: center;
+    text-align: right;
     font-size: 18px;
-    background: blue;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    align-items: end;
 }
